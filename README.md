@@ -1,12 +1,21 @@
 # Fibbonaci-Service-Python
 Rest Service - Python - Fibonacci serie
 
+----------------------------------------
+
 Execute this with Python:
 ```
 python FibonacciHttp.py
 ```
 
+----------------------------------------
+
 Execute this as Docker Container:
+Build Container:
+```
+sudo docker build -t pythonfibonacci .
+```
+Run Container:
 ```
 sudo docker run pythonfibonacci
 ```
