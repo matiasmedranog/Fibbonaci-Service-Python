@@ -11,8 +11,9 @@ Execute this as Docker Container:
 sudo docker run pythonfibonacci
 ```
 
+----------------------------------------
 
-Send a test curl:
+And send a test curl:
 ```
 curl -i -H "Accept: application/json" localhost:8080/9
 ```
