@@ -1,8 +1,8 @@
 FROM python:3
-EXPOSE 8080
-ADD FibonacciHttp.py /
-ADD Fibonacci.py /
+ADD . /code
+WORKDIR /code
+RUN pip3 install pillow
 RUN pip install pystrich
 RUN pip install Flask
 RUN pip install mimerender
-CMD [ "python", "./FibonacciHttp.py" ]
+CMD [ "python", "FibonacciHttp.py" ]
