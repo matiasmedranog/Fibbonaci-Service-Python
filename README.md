@@ -10,22 +10,18 @@ python FibonacciHttp.py
 
 ----------------------------------------
 
-Execute this as Docker Container:
-- Build Container:
-```
-sudo docker build -t pythonfibonacci .
-```
+Execute this as Docker Container: (With Docker Compose)
 - Run Container:
 ```
-sudo docker run pythonfibonacci
+docker-compose up
 ```
 
 ----------------------------------------
 
 And send a test curl:
 ```
-curl -i -H "Accept: application/json" localhost:8080/9
-curl -i -H "Accept: application/json" localhost:8080/10
-curl -i -H "Accept: application/json" localhost:8080/11
-curl -i -H "Accept: application/json" localhost:8080/[Nº]
+curl -X GET http://localhost:5000/10
+curl -X GET http://localhost:5000/11
+curl -X GET http://localhost:5000/12
+curl -X GET http://localhost:5000/[Nº]
 ```
