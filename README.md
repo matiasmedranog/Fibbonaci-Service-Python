@@ -16,6 +16,10 @@ Execute this as Docker Container: (With Docker Compose)
 docker-compose up
 ```
 
+- Run Container as Daemon:
+```
+docker-compose up -d
+```
 ----------------------------------------
 
 And send a test curl:
