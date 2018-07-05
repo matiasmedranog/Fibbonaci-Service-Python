@@ -3,4 +3,4 @@ services:
   fibonaccipython:
     build: .
     ports:
-     - "5000:5000"
+     - "3001:3001"
